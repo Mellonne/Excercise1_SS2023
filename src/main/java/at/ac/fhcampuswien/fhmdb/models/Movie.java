@@ -5,7 +5,9 @@ import java.util.List;
 
 public class Movie {
     //Test commit
-    //Test commit 3
+    //Test commit 4
+
+
     private String title;
     private String description;
     // TODO add more properties here
@@ -16,6 +18,8 @@ public class Movie {
     }
 
     public String getTitle() {
+        String i = "Recep";
+        String x = "test";
         return title;
     }
 
