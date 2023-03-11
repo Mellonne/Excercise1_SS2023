@@ -16,6 +16,7 @@ public class Movie {
     }
 
     public String getTitle() {
+        String i = "Ting";
         return title;
     }
 
