@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Movie {
+    //Test commit
+    //Test commit 3
     private String title;
     private String description;
     // TODO add more properties here
