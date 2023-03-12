@@ -1,4 +1,7 @@
 package at.ac.fhcampuswien.fhmdb.models;
 
-public class SortState {
+public enum SortState {
+    NONE,
+    ASCENDING,
+    DESCENDING,
 }
