@@ -22,6 +22,3 @@ public enum Genre {
     WAR,
     WESTERN
 }
-
-
-
