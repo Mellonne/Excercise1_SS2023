@@ -57,9 +57,11 @@ public class HomeController implements Initializable {
                 // TODO sort observableMovies ascending
                 //MovieSorter.sortMovies(observableMovies,SortState.ASCENDING);
                 sortBtn.setText("Sort (desc)");
+                observableMovies.sort(Comparator.comparing(Movie::getTitle, String.CASE_INSENSITIVE_ORDER));
             } else {
                 // TODO sort observableMovies descending
                 sortBtn.setText("Sort (asc)");
+                observableMovies.sort(Comparator.comparing(Movie::getTitle, String.CASE_INSENSITIVE_ORDER).reversed());
             }
         });
 
