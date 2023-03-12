@@ -54,6 +54,11 @@ public class Movie {
                 "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
                 Arrays.asList(Genre.ANIMATION, Genre.DRAMA, Genre.ACTION)
         ));
+        movies.add(new Movie(
+                "The Wolf of Wall Street",
+                "Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living the high life to his fall involving crime, corruption and the federal government.",
+                Arrays.asList(Genre.DRAMA, Genre.ROMANCE, Genre.BIOGRAPHY)
+        ));
         return movies;
     }
 }
