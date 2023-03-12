@@ -7,7 +7,6 @@ import java.util.List;
 public class Movie {
     private String title;
     private String description;
-    // TODO add more properties here
     private List<Genre> genres;
 
     public Movie(String title, String description, List<Genre> genres) {
@@ -29,14 +28,8 @@ public class Movie {
         }
         return this.title.equals(other.title) && this.description.equals(other.description) && this.genres.equals(other.genres);
     }
-    public String getTitle() {
-        return title;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
+    public String getTitle() { return title; }
+    public String getDescription() { return description; }
     public List<Genre> getGenres() { return genres; }
 
     public static List<Movie> initializeMovies(){
@@ -62,7 +55,6 @@ public class Movie {
                 "The description.",
                 Arrays.asList(Genre.COMEDY)
         ));
-
         return movies;
     }
 }
