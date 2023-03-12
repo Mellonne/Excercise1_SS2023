@@ -15,11 +15,7 @@ public class Movie {
         this.description = description;
     }
 
-    public String getTitle() {
-        String i = "Recepp";
-        String x = "test";
-        return title;
-    }
+    public String getTitle() { return title; }
 
     public String getDescription() {
         return description;
