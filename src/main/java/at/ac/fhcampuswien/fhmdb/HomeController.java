@@ -14,6 +14,7 @@ import javafx.scene.control.TextField;
 import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
+import at.ac.fhcampuswien.fhmdb.models.Movie;
 
 public class HomeController implements Initializable {
     @FXML

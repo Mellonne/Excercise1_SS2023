@@ -8,6 +8,7 @@ public class Movie {
     private String title;
     private String description;
     private List<Genre> genres;
+    //String[] genresArray = new String[genres.size()];
 
     public Movie(String title, String description, List<Genre> genres) {
         this.title = title;
@@ -31,6 +32,7 @@ public class Movie {
     public String getTitle() { return title; }
     public String getDescription() { return description; }
     public List<Genre> getGenres() { return genres; }
+    //public String[] getGenresArray() { return genresArray; }
 
     public static List<Movie> initializeMovies(){
         List<Movie> movies = new ArrayList<>();
