@@ -20,7 +20,7 @@ class HomeControllerTest {
     @Test
     void movies_and_observableMovies_are_equal(){
         //GIVEN
-        homeController.initialize(URL url, ResourceBundle resourceBundle);
+        homeController.initialize();
 
         //WHEN & THEN
         assertEquals(homeController.allMovies, homeController.observableMovies);
@@ -30,7 +30,7 @@ class HomeControllerTest {
     void movies_are_sorted_correctly_with_current_sortState_none_then_ascending(){
         //GIVEN
         homeController.initialize();
-        homeController.sortState = SortState.NONE;
+        homeController.sortState = sortState.NONE;
 
         //WHEN
         homeController.sortMovies();
