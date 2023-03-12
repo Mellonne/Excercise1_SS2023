@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Movie {
+
     private String title;
     private String description;
     private List<Genre> genres;

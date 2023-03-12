@@ -1,6 +1,8 @@
 package at.ac.fhcampuswien.fhmdb;
 
 import at.ac.fhcampuswien.fhmdb.models.Movie;
+import at.ac.fhcampuswien.fhmdb.models.MovieSorter;
+import at.ac.fhcampuswien.fhmdb.models.SortState;
 import at.ac.fhcampuswien.fhmdb.ui.MovieCell;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXComboBox;
@@ -54,6 +56,7 @@ public class HomeController implements Initializable {
         sortBtn.setOnAction(actionEvent -> {
             if(sortBtn.getText().equals("Sort (asc)")) {
                 // TODO sort observableMovies ascending
+                MovieSorter.sortMovies(observableMovies,SortState.ASCENDING);
                 sortBtn.setText("Sort (desc)");
             } else {
                 // TODO sort observableMovies descending

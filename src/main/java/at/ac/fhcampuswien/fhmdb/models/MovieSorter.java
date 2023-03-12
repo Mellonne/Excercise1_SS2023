@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 //Recep To Do : Connect it with the Button
 public class MovieSorter {
-    public List<Movie> sortMovies(List<Movie> movies, SortState sortOrder) {
+    public static List<Movie>sortMovies(List<Movie> movies, SortState sortOrder) {
         List<Movie> sortedMovies = new ArrayList<>(movies);
 
         // Sort the movies based on the title in ascending or descending order
