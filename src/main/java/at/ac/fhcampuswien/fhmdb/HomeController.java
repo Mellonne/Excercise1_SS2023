@@ -64,8 +64,6 @@ public class HomeController implements Initializable {
                 observableMovies.sort(Comparator.comparing(Movie::getTitle, String.CASE_INSENSITIVE_ORDER).reversed());
             }
         });
-
-
     }
 
     public void initializeState() {
