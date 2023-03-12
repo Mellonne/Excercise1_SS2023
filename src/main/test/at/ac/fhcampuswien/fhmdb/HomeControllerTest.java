@@ -21,6 +21,7 @@ class HomeControllerTest {
     void movies_and_observableMovies_are_equal(){
         //GIVEN
         homeController.initializeState();
+        homeController.initializeState = SortState.NONE;
 
         //WHEN & THEN
         assertEquals(homeController.allMovies, homeController.observableMovies);

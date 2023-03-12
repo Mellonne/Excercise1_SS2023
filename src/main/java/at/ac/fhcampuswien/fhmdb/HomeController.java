@@ -64,4 +64,7 @@ public class HomeController implements Initializable {
 
 
     }
+
+    public void initializeState() {
+    }
 }
