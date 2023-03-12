@@ -10,6 +10,8 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import at.ac.fhcampuswien.fhmdb.models.Movie;
 
+import java.util.stream.Collectors;
+
 //Mousavi
 
 public class MovieCell extends ListCell<Movie> {
@@ -33,7 +35,8 @@ public class MovieCell extends ListCell<Movie> {
                             ? movie.getDescription()
                             : "No description available"
             );
-            genres.setText(movie.getGenres().toString());
+            genres.setText(movie.getGenres().stream().map(e -> e.toString()).collect(Collectors.joining(", ")));
+            //Liste -> stream; map interiert ü. Stream: e = akutelle Element (1-3. Genre Enum/pro Movie) -> string; collect f. joining
 
             // color scheme
             title.getStyleClass().add("text-yellow");
