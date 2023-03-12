@@ -13,15 +13,10 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
 
-import java.net.URL;
-import java.util.Comparator;
-import java.util.List;
-import java.util.ResourceBundle;
-
 class HomeControllerTest {
 
 }
-}
+
     private static HomeController homeController;
 
 
