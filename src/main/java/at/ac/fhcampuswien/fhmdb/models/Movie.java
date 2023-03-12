@@ -34,26 +34,25 @@ public class Movie {
 
     public static List<Movie> initializeMovies(){
         List<Movie> movies = new ArrayList<>();
-        // TODO add some dummy data here
         movies.add(new Movie(
-                "The Dog",
-                "Movie about a cute dog.",
-                Arrays.asList(Genre.ANIMATION, Genre.FAMILY)
+                "Life Is Beautiful",
+                "When an open-minded Jewish librarian and his son become victims of the Holocaust, he uses a perfect mixture of will, humor, and imagination to protect his son",
+                Arrays.asList(Genre.DRAMA, Genre.ROMANCE)
         ));
         movies.add(new Movie(
-                "CatsVenture",
-                "A cute cat on an adventure.",
-                Arrays.asList(Genre.ANIMATION, Genre.ADVENTURE)
+                "The Usual Suspects",
+                "A sole survivor tells of the twisty events leading up to a horrific gun battle on a boat, which begin when five criminals meet at a seemingly random police lineup.",
+                Arrays.asList(Genre.CRIME, Genre.DRAMA, Genre.MYSTERY)
         ));
         movies.add(new Movie(
-                "Generic Movie Title",
-                "Generic movie description.",
-                Arrays.asList(Genre.MYSTERY)
+                "Puss in Boots",
+                "An outlaw cat, his childhood egg-friend, and a seductive thief kitty set out in search for the eggs of the fabled Golden Goose to clear his name, restore his lost honor, and regain the trust of his mother and town.",
+                Arrays.asList(Genre.COMEDY, Genre.FAMILY, Genre.ANIMATION)
         ));
         movies.add(new Movie(
-                "The Title",
-                "The description.",
-                Arrays.asList(Genre.COMEDY)
+                "Avatar",
+                "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+                Arrays.asList(Genre.ANIMATION, Genre.DRAMA, Genre.ACTION)
         ));
         return movies;
     }
