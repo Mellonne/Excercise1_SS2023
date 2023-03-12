@@ -11,6 +11,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class HomeControllerTest {
+
     private static HomeController homeController;
     @BeforeAll
     static void inti() { homeController = new HomeController(); }
@@ -61,3 +62,4 @@ class HomeControllerTest {
         assertEquals(expected, homeController.observableMovies);
     }
 }
+//asdfasdf
