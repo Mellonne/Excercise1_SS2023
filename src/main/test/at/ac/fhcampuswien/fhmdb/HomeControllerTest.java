@@ -2,6 +2,7 @@ package at.ac.fhcampuswien.fhmdb;
 ///?????
 import at.ac.fhcampuswien.fhmdb.models.Genre;
 import at.ac.fhcampuswien.fhmdb.models.Movie;
+import at.ac.fhcampuswien.fhmdb.models.SortState;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -30,7 +31,7 @@ class HomeControllerTest {
     void movies_are_sorted_correctly_with_current_sortState_none_then_ascending(){
         //GIVEN
         homeController.initialize();
-        homeController.sortState = sortState.NONE;
+        homeController.sortState = SortState.NONE;
 
         //WHEN
         homeController.sortMovies();
@@ -56,7 +57,7 @@ class HomeControllerTest {
                         "The Usual Suspects",
                         "A sole survivor tells of the twisty events leading up to a horrific gun battle on a boat, which begin when five criminals meet at a seemingly random police lineup.",
                         Arrays.asList(Genre.ANIMATION, Genre.DRAMA, Genre.ACTION)
-                )
+                ),
                 new Movie(
                         "The Wolf of Wall Street",
                         "Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living the high life to his fall involving crime, corruption and the federal government.",

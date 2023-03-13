@@ -34,7 +34,8 @@ public class HomeController implements Initializable {
 
     public List<Movie> allMovies = Movie.initializeMovies();
 
-    private final ObservableList<Movie> observableMovies = FXCollections.observableArrayList();   // automatically updates corresponding UI elements when underlying data changes
+    final ObservableList<Movie> observableMovies = FXCollections.observableArrayList();   // automatically updates corresponding UI elements when underlying data changes
+    public Object sortState;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -67,5 +68,11 @@ public class HomeController implements Initializable {
     }
 
     public void initializeState() {
+    }
+
+    public void sortMovies() {
+    }
+
+    public void initialize() {
     }
 }
