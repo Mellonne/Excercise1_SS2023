@@ -8,12 +8,18 @@ import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
+import at.ac.fhcampuswien.fhmdb.models.Movie;
+
+import java.util.stream.Collectors;
+
 //Mousavi
 
 public class MovieCell extends ListCell<Movie> {
     private final Label title = new Label();
     private final Label detail = new Label();
-    private final VBox layout = new VBox(title, detail);
+    private final Label genres = new Label();
+
+    private final VBox layout = new VBox(title, detail, genres);
 
     @Override
     protected void updateItem(Movie movie, boolean empty) {
@@ -29,11 +35,13 @@ public class MovieCell extends ListCell<Movie> {
                             ? movie.getDescription()
                             : "No description available"
             );
-
+            genres.setText(movie.getGenres().stream().map(e -> e.toString()).collect(Collectors.joining(", ")));
+            //Liste -> stream; map interiert ü. Stream: e = akutelle Element (1-3. Genre Enum/pro Movie) -> string; collect f. joining
 
             // color scheme
             title.getStyleClass().add("text-yellow");
             detail.getStyleClass().add("text-white");
+            genres.getStyleClass().add("text-white");
             layout.setBackground(new Background(new BackgroundFill(Color.web("#454545"), null, null)));
 
             // layout
